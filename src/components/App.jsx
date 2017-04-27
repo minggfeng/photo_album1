@@ -46,7 +46,7 @@ class App extends React.Component {
 
   }
 
-  componentDidMount() {
+  componentWillMount() {
     $.get('http://127.0.0.1:3000', (data) => {
         this.setState({
           photos: data
